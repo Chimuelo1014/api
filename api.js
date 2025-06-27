@@ -3,7 +3,7 @@ const form = document.getElementById("form");
 const input = document.getElementById("pregunta");
 const chat = document.getElementById("chat");
 
-form.addEventListener("submit", async (e) => {
+form.addEventListener("submit", async (e) => { //evento de escucha
   e.preventDefault();
   const mensajeUsuario = input.value.trim();
   if (mensajeUsuario === "") return;
